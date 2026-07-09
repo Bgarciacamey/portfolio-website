@@ -1,0 +1,39 @@
+---
+title: "Data Visualization with R"
+image: "https://placehold.co/600x400?text=R+Data+Visualization"
+categories: [R Programming, Data Visualization, ggplot2, Marketing Analytics]
+index: 3
+---
+
+#### **Overview**
+
+This project focused on using R and the ggplot2 package to analyze and visualize data. Various charts and graphs were created to identify trends, compare variables, and communicate insights effectively. The project emphasized transforming raw data into meaningful visualizations that support data-driven decision-making.
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+#### **Learning Outcomes**
+
+- Create professional data visualizations using R and ggplot2.
+- Explore relationships between variables using graphical analysis.
+- Interpret patterns and trends within datasets.
+- Present analytical findings through clear visualizations.
+- Improve data communication skills.
+
+:::
+
+::: {.column width="50%"}
+
+#### **Key Skills Gained**
+
+- R Programming
+- ggplot2
+- Data Visualization
+- Exploratory Data Analysis
+- Statistical Graphics
+- Data Interpretation
+
+:::
+
+:::

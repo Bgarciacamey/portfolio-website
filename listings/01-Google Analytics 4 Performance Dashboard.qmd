@@ -1,0 +1,37 @@
+---
+title: "Google Analytics 4 Performance Dashboard"
+image: "https://placehold.co/600x400?text=Google+Analytics+4"
+categories: [Google Analytics 4, Marketing Analytics, Dashboard, Data Visualization]
+index: 1
+---
+
+#### **Overview**
+
+This project focused on using Google Analytics 4 (GA4) to analyze website performance and user behavior. Through dashboard reports and exploratory analysis, I evaluated key performance indicators (KPIs), user engagement, traffic sources, and conversion activity. The project emphasized using data to identify trends and support marketing decisions.
+
+::: {.columns}
+::: {.column width="50%"}
+
+#### **Learning Outcomes**
+
+- Analyze website performance using Google Analytics 4.
+- Interpret user behavior through reports and dashboards.
+- Evaluate marketing KPIs to support business decisions.
+- Identify opportunities to improve website performance.
+- Communicate findings using data visualizations.
+
+:::
+
+::: {.column width="50%"}
+
+#### **Key Skills Gained**
+
+- Google Analytics 4 (GA4)
+- Marketing Analytics
+- Dashboard Interpretation
+- KPI Analysis
+- Data Visualization
+- Data-Driven Decision Making
+
+:::
+:::

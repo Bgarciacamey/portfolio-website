@@ -1,0 +1,39 @@
+---
+title: "Google Analytics 4 Funnel Exploration"
+image: "https://placehold.co/600x400?text=GA4+Funnel+Exploration"
+categories: [Google Analytics 4, Funnel Analysis, Marketing Analytics, User Journey]
+index: 4
+---
+
+#### **Overview**
+
+This project used Google Analytics 4 Funnel Exploration to analyze the customer journey from initial website visits to key conversion events. By identifying where users exited the funnel, I evaluated opportunities to improve the user experience and increase conversion rates.
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+#### **Learning Outcomes**
+
+- Build and analyze GA4 Funnel Explorations.
+- Identify user drop-off points within the conversion funnel.
+- Evaluate website performance using conversion metrics.
+- Recommend improvements to increase user engagement.
+- Present findings using visual reports.
+
+:::
+
+::: {.column width="50%"}
+
+#### **Key Skills Gained**
+
+- Google Analytics 4
+- Funnel Exploration
+- User Journey Analysis
+- Conversion Optimization
+- Marketing Analytics
+- Data Visualization
+
+:::
+
+:::

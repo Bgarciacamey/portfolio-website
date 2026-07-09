@@ -1,27 +1,25 @@
 ---
-title: "Hi, I'm [Your Name Here]"
+title: "Hi, I'm Blanca Garcia Camey "
 ---
 
-
-::: {.columns}
+::::: columns
 ::: {.column width="30%"}
-![](https://placehold.co/530x530?text=images/headshot.jpg){width=100% style="border-radius: 50%;"}
+![](images/headshot.jpg){style="border-radius: 50%;"}
 :::
+
 ::: {.column width="70%" style="padding-left: 3rem;"}
-I'm a [your profession or area of focus]. I specialize in transforming complex information into clear, engaging, and actionable insights.
+I'm a Business Administration student at California State Polytechnic University, Pomona, specializing in Marketing Management. Throughout my coursework, I have developed experience in marketing analytics, digital marketing, data visualization, and business strategy using tools such as R, Quarto, Google Analytics 4, Power BI, Excel, and GitHub.
 :::
-:::
+:::::
 
 ## About Me
 
-I hold a <span class="highlight">[Your Degree or Current Program]</span> from [Your Institution].
-
-
+I am currently pursuing a Bachelor of Science in Business Administration with an emphasis in Marketing Management at California State Polytechnic University, Pomona. My academic experience has allowed me to build skills in marketing analytics, digital marketing, data visualization, business strategy, and web development using Quarto. Through coursework and projects, I have gained experience analyzing data, creating dashboards, and presenting insights to support data-driven decision-making.
 
 ## Let's Connect
 
-You can [email me](mailto:you@example.com) or connect on [LinkedIn](https://www.linkedin.com/in/your-profile).
+You can reach me at [bgarciacamey\@cpp.edu](mailto:bgarciacamey@cpp.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/cameyblanca23/?skipRedirect=true).
 
----
+------------------------------------------------------------------------
 
 *Welcome to my portfolio.*

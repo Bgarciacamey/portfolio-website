@@ -1,0 +1,39 @@
+---
+title: "Google Analytics 4 Reporting & Insights"
+image: "https://placehold.co/600x400?text=GA4+Reporting"
+categories: [Google Analytics 4, Marketing Analytics, Reporting, Data Analysis]
+index: 2
+---
+
+#### **Overview**
+
+This project focused on analyzing Google Analytics 4 reports to identify trends in website traffic, user engagement, and marketing performance. By comparing key metrics and interpreting dashboard reports, I developed recommendations to improve digital marketing performance and enhance the user experience.
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+#### **Learning Outcomes**
+
+- Interpret Google Analytics 4 reports and dashboards.
+- Analyze website traffic and user engagement.
+- Compare marketing performance across different metrics.
+- Develop data-driven marketing recommendations.
+- Communicate findings through visual reports.
+
+:::
+
+::: {.column width="50%"}
+
+#### **Key Skills Gained**
+
+- Google Analytics 4
+- Marketing Reporting
+- KPI Analysis
+- Data Interpretation
+- Digital Marketing Analytics
+- Business Communication
+
+:::
+
+:::

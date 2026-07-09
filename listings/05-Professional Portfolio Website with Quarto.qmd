@@ -1,0 +1,39 @@
+---
+title: "Professional Portfolio Website with Quarto"
+image: "https://placehold.co/600x400?text=Quarto+Portfolio+Website"
+categories: [Quarto, GitHub, Portfolio Website, Web Development]
+index: 5
+---
+
+#### **Overview**
+
+This project involved designing and publishing a professional portfolio website using Quarto and GitHub Pages. The website showcases my coursework, marketing analytics projects, technical skills, and professional development in a clean and organized format. Throughout the project, I learned how to build a multi-page website, manage content with Quarto, and publish it online using GitHub.
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+#### **Learning Outcomes**
+
+- Design and develop a professional portfolio website.
+- Organize projects into a clear and easy-to-navigate format.
+- Publish a website using GitHub Pages.
+- Apply Quarto to create dynamic web pages.
+- Present technical and analytical work in a professional portfolio.
+
+:::
+
+::: {.column width="50%"}
+
+#### **Key Skills Gained**
+
+- Quarto
+- GitHub
+- Website Development
+- Markdown
+- Professional Portfolio Design
+- Technical Communication
+
+:::
+
+:::
