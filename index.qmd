@@ -2,6 +2,7 @@
 title: "Hi, I'm Blanca Garcia Camey "
 ---
 
+
 ::::: columns
 ::: {.column width="30%"}
 ![](images/headshot.jpg){style="border-radius: 50%;"}
