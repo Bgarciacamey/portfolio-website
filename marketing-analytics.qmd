@@ -8,15 +8,18 @@ listing:
     - "index desc"
 ---
 
-Below are selected projects that highlight my experience applying marketing analytics to real-world challenges. These projects reflect my ability to combine statistical tools, campaign data, and strategic thinking to inform decisions and drive results.
+Throughout this course, I completed a variety of marketing analytics projects using industry tools and data-driven techniques. These projects demonstrate my ability to collect, analyze, visualize, and communicate marketing insights to support strategic business decisions.
 
-Whether developing dashboards, analyzing campaign performance, or uncovering insights through SEO and web analytics, each project is rooted in turning complex marketing data into clear, actionable strategies.
+Using R, Quarto, Google Analytics 4, Power BI, and Microsoft Excel, I explored customer behavior, website performance, data visualization, and digital marketing analytics. Each project strengthened my analytical skills while improving my ability to present findings in a clear and professional manner.
 
-## What You’ll Find
+## Featured Projects
 
-- **Campaign Performance Analysis:** Evaluating the effectiveness of digital marketing efforts using data.
-- **Data Visualization:** Turning raw datasets into intuitive dashboards and reports.
-- **Marketing Mix & Attribution:** Exploring how different channels contribute to success.
-- **Customer & Market Insights:** Using analytics to better understand user behavior and optimize experiences.
+- **Google Analytics 4 (GA4):** Explored website traffic, user behavior, funnels, and key performance indicators using GA4.
+- **Data Visualization with R:** Created charts and visualizations using ggplot2 to communicate trends and insights from real datasets.
+- **Marketing Dashboards:** Built interactive dashboards to summarize marketing performance and support business decisions.
+- **Quarto Website Development:** Designed and published professional reports and websites using Quarto and GitHub.
+- **Marketing Analytics Applications:** Applied analytical techniques to evaluate marketing performance and develop data-driven recommendations.
 
 ---
+
+Below are examples of the projects I completed throughout the semester.

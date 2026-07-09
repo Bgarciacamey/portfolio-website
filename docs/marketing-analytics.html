@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Google Analytics 4 Performance Dashboard – Blanca Garcia Camey</title>
+<title>Marketing Analytics – Blanca Garcia Camey</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7a7bdcd7228eac99d817509ebd846621.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7a7bdcd7228eac99d817509ebd846621.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -78,6 +109,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-123ABC78');</script>
 <!-- End Google Tag Manager -->
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -88,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Blanca Garcia Camey</span>
     </a>
   </div>
@@ -99,15 +159,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../marketing-analytics.html"> 
+    <a class="nav-link active" href="./marketing-analytics.html" aria-current="page"> 
 <span class="menu-text">Marketing Analytics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../strategic-marketing.html"> 
+    <a class="nav-link" href="./strategic-marketing.html"> 
 <span class="menu-text">Strategic Marketing</span></a>
   </li>  
 </ul>
@@ -121,9 +181,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link active" data-scroll-target="#featured-projects">Featured Projects</a></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="RGFzaGJvYXJk">Dashboard <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMEFuYWx5c2lz">Data Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFZpc3VhbGl6YXRpb24=">Data Visualization <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RnVubmVsJTIwQW5hbHlzaXM=">Funnel Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2dwbG90Mg==">ggplot2 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2l0SHVi">GitHub <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R29vZ2xlJTIwQW5hbHl0aWNzJTIwNA==">Google Analytics 4 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TWFya2V0aW5nJTIwQW5hbHl0aWNz">Marketing Analytics <span class="quarto-category-count">(4)</span></div><div class="category" data-category="UG9ydGZvbGlvJTIwV2Vic2l0ZQ==">Portfolio Website <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhcnRv">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UiUyMFByb2dyYW1taW5n">R Programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwb3J0aW5n">Reporting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VXNlciUyMEpvdXJuZXk=">User Journey <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V2ViJTIwRGV2ZWxvcG1lbnQ=">Web Development <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <!-- Google Tag Manager (noscript) -->
@@ -132,14 +198,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Google Analytics 4 Performance Dashboard</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Google Analytics 4</div>
-    <div class="quarto-category">Marketing Analytics</div>
-    <div class="quarto-category">Dashboard</div>
-    <div class="quarto-category">Data Visualization</div>
-  </div>
-  </div>
+<h1 class="title">Marketing Analytics</h1>
+</div>
 
 
 
@@ -155,40 +215,189 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 
-<section id="overview" class="level4">
-<h4 class="anchored" data-anchor-id="overview"><strong>Overview</strong></h4>
-<p>This project focused on using Google Analytics 4 (GA4) to analyze website performance and user behavior. Through dashboard reports and exploratory analysis, I evaluated key performance indicators (KPIs), user engagement, traffic sources, and conversion activity. The project emphasized using data to identify trends and support marketing decisions.</p>
-</section>
-<div class="columns">
-<div class="column" style="width:50%;">
-<section id="learning-outcomes" class="level4">
-<h4 class="anchored" data-anchor-id="learning-outcomes"><strong>Learning Outcomes</strong></h4>
+<p>Throughout this course, I completed a variety of marketing analytics projects using industry tools and data-driven techniques. These projects demonstrate my ability to collect, analyze, visualize, and communicate marketing insights to support strategic business decisions.</p>
+<p>Using R, Quarto, Google Analytics 4, Power BI, and Microsoft Excel, I explored customer behavior, website performance, data visualization, and digital marketing analytics. Each project strengthened my analytical skills while improving my ability to present findings in a clear and professional manner.</p>
+<section id="featured-projects" class="level2">
+<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
 <ul>
-<li>Analyze website performance using Google Analytics 4.</li>
-<li>Interpret user behavior through reports and dashboards.</li>
-<li>Evaluate marketing KPIs to support business decisions.</li>
-<li>Identify opportunities to improve website performance.</li>
-<li>Communicate findings using data visualizations.</li>
+<li><strong>Google Analytics 4 (GA4):</strong> Explored website traffic, user behavior, funnels, and key performance indicators using GA4.</li>
+<li><strong>Data Visualization with R:</strong> Created charts and visualizations using ggplot2 to communicate trends and insights from real datasets.</li>
+<li><strong>Marketing Dashboards:</strong> Built interactive dashboards to summarize marketing performance and support business decisions.</li>
+<li><strong>Quarto Website Development:</strong> Designed and published professional reports and websites using Quarto and GitHub.</li>
+<li><strong>Marketing Analytics Applications:</strong> Applied analytical techniques to evaluate marketing performance and develop data-driven recommendations.</li>
 </ul>
+<hr>
+<p>Below are examples of the projects I completed throughout the semester.</p>
+
+
+
 </section>
-</div><div class="column" style="width:50%;">
-<section id="key-skills-gained" class="level4">
-<h4 class="anchored" data-anchor-id="key-skills-gained"><strong>Key Skills Gained</strong></h4>
-<ul>
-<li>Google Analytics 4 (GA4)</li>
-<li>Marketing Analytics</li>
-<li>Dashboard Interpretation</li>
-<li>KPI Analysis</li>
-<li>Data Visualization</li>
-<li>Data-Driven Decision Making</li>
-</ul>
-</section>
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UXVhcnRvJTJDR2l0SHViJTJDUG9ydGZvbGlvJTIwV2Vic2l0ZSUyQ1dlYiUyMERldmVsb3BtZW50" data-listing-file-modified-sort="1783570300399" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
+<a href="./listings/05-Professional Portfolio Website with Quarto.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=Quarto+Portfolio+Website" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Professional Portfolio Website with Quarto
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9ydGZvbGlvJTIwV2Vic2l0ZQ=='); return false;">Portfolio Website</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('V2ViJTIwRGV2ZWxvcG1lbnQ='); return false;">Web Development</div>
+
+</div>
+<div class="card-text listing-description delink">
+This project involved designing and publishing a professional portfolio website using Quarto and GitHub Pages. The website showcases my coursework, marketing analytics…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="R29vZ2xlJTIwQW5hbHl0aWNzJTIwNCUyQ0Z1bm5lbCUyMEFuYWx5c2lzJTJDTWFya2V0aW5nJTIwQW5hbHl0aWNzJTJDVXNlciUyMEpvdXJuZXk=" data-listing-file-modified-sort="1783570276215" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
+<a href="./listings/04-Google Analytics 4 Funnel Exploration.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=GA4+Funnel+Exploration" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Google Analytics 4 Funnel Exploration
+</h5>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('R29vZ2xlJTIwQW5hbHl0aWNzJTIwNA=='); return false;">Google Analytics 4</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('RnVubmVsJTIwQW5hbHlzaXM='); return false;">Funnel Analysis</div>
 
-</main> <!-- /main -->
+<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwQW5hbHl0aWNz'); return false;">Marketing Analytics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VXNlciUyMEpvdXJuZXk='); return false;">User Journey</div>
+
+</div>
+<div class="card-text listing-description delink">
+This project used Google Analytics 4 Funnel Exploration to analyze the customer journey from initial website visits to key conversion events. By identifying where users…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UiUyMFByb2dyYW1taW5nJTJDRGF0YSUyMFZpc3VhbGl6YXRpb24lMkNnZ3Bsb3QyJTJDTWFya2V0aW5nJTIwQW5hbHl0aWNz" data-listing-file-modified-sort="1783570221749" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
+<a href="./listings/03-Data Visualization with R.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=R+Data+Visualization" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Data Visualization with R
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFByb2dyYW1taW5n'); return false;">R Programming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">Data Visualization</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">ggplot2</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwQW5hbHl0aWNz'); return false;">Marketing Analytics</div>
+
+</div>
+<div class="card-text listing-description delink">
+This project focused on using R and the ggplot2 package to analyze and visualize data. Various charts and graphs were created to identify trends, compare variables, and…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="R29vZ2xlJTIwQW5hbHl0aWNzJTIwNCUyQ01hcmtldGluZyUyMEFuYWx5dGljcyUyQ1JlcG9ydGluZyUyQ0RhdGElMjBBbmFseXNpcw==" data-listing-file-modified-sort="1783570196969" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
+<a href="./listings/02-Google Analytics 4 Reporting &amp; Insights.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=GA4+Reporting" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Google Analytics 4 Reporting &amp; Insights
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R29vZ2xlJTIwQW5hbHl0aWNzJTIwNA=='); return false;">Google Analytics 4</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwQW5hbHl0aWNz'); return false;">Marketing Analytics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVwb3J0aW5n'); return false;">Reporting</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFuYWx5c2lz'); return false;">Data Analysis</div>
+
+</div>
+<div class="card-text listing-description delink">
+This project focused on analyzing Google Analytics 4 reports to identify trends in website traffic, user engagement, and marketing performance. By comparing key metrics and…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="R29vZ2xlJTIwQW5hbHl0aWNzJTIwNCUyQ01hcmtldGluZyUyMEFuYWx5dGljcyUyQ0Rhc2hib2FyZCUyQ0RhdGElMjBWaXN1YWxpemF0aW9u" data-listing-file-modified-sort="1783569844819" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
+<a href="./listings/01-Google Analytics 4 Performance Dashboard.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=Google+Analytics+4" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Google Analytics 4 Performance Dashboard
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R29vZ2xlJTIwQW5hbHl0aWNzJTIwNA=='); return false;">Google Analytics 4</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwQW5hbHl0aWNz'); return false;">Marketing Analytics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGFzaGJvYXJk'); return false;">Dashboard</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">Data Visualization</div>
+
+</div>
+<div class="card-text listing-description delink">
+This project focused on using Google Analytics 4 (GA4) to analyze website performance and user behavior. Through dashboard reports and exploratory analysis, I evaluated key…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
